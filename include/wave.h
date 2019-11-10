@@ -59,6 +59,7 @@
 #define WAVE_FORMAT_MPEGLAYER3          (0x0055)
 #define WAVE_FORMAT_G726_ADPCM          (0x0064)
 #define WAVE_FORMAT_G722_ADPCM          (0x0065)
+#define WAVE_FORMAT_EXTENSIBLE          (0xfffe)
 
 #define CD_BLOCK_SIZE                   (2352)
 #define CD_BLOCKS_PER_SEC               (75)

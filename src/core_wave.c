@@ -167,6 +167,7 @@ bool verify_wav_header_internal(wave_info *info,bool verbose)
   }
 
   switch (info->wave_format) {
+    case WAVE_FORMAT_EXTENSIBLE:
     case WAVE_FORMAT_PCM:
       break;
     default:
@@ -511,7 +512,9 @@ char *format_to_str(wshort format)
     case WAVE_FORMAT_G726_ADPCM:
       return "G.726 ADPCM";
     case WAVE_FORMAT_G722_ADPCM:
-      return "G.722 ADPCM";
+      return "G.722 ADPCM";      
+    case WAVE_FORMAT_EXTENSIBLE:
+      return "WAVE Extensible format";
   }
   return "Unknown";
 }
